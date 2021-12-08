@@ -16,8 +16,6 @@ export default function Home() {
         <Header title="Welcome to my app!" />
         <p className="description">
           Testing! Get started by editing <code>pages/index.js</code>
-          https://tyrannocoding.tistory.com/51
-          https://blog.naver.com/PostView.nhn?blogId=ka28&logNo=222011121093
         </p>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <div class="autolink" data-onsuccess="autolink"></div>
