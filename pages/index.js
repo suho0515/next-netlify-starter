@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name ="google-signin-client_id" content="903895739581-p1h1c0hlsvgj9qqu4nf7asa86gum7qk6.apps.googleusercontent.com"></meta>
       </Head>
 
       <main>
