@@ -16,8 +16,11 @@ export default function Home() {
         <Header title="Welcome to my app!" />
         <p className="description">
           Testing! Get started by editing <code>pages/index.js</code>
+          https://tyrannocoding.tistory.com/51
+          https://blog.naver.com/PostView.nhn?blogId=ka28&logNo=222011121093
         </p>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="autolink" data-onsuccess="autolink"></div>
       </main>
 
       <Footer />
@@ -31,4 +34,12 @@ function onSignIn(googleUser) {
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+function autolink(con) {
+  var container = document.getElementById(con);
+  var doc = container.innerHTML;
+  var regURL = new RegExp("(http|https|ftp|telnet|news|irc)://([-/.a-zA-Z0-9_~#%$?&=:200-377()가-힣]+)","gi");
+  var regEmail = new RegExp("([xA1-xFEa-z0-9_-]+@[xA1-xFEa-z0-9-]+\.[a-z0-9-]+)","gi");
+  container.innerHTML = doc.replace(regURL,"$1://$2").replace(regEmail,"$1");
 }
